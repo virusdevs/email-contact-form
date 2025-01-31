@@ -1,8 +1,8 @@
 {
-    "name": "email-contact-form",
-    "version": "1.0.0",
-    "description": "A Simple Email Contact Form",
-    "main": "./index.js",
+  "name": "email-contact-form",
+  "version": "1.0.0",
+  "description": "A Simple Email Contact Form",
+  "main": "./index.js",
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name gifted",
     "stop": "pm2 stop gifted",
