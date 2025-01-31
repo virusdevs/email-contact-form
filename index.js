@@ -8,7 +8,7 @@ const upload = multer({ storage: multer.memoryStorage() });
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.post('/send', upload.single('attachment'), async (req, res) => {
+app.post('/send-email.php', upload.single('attachment'), async (req, res) => {
   const { name, phone, email, message } = req.body;
   const attachment = req.file;
   const transporter = nodemailer.createTransport({
