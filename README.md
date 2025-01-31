@@ -11,7 +11,7 @@
 ### StepWise ###
 
 - **Head over to your Gmail App**
-- **Click on create manage your google account**
+- **Click on manage your google account**
 - **Click On the Security Tab and enable Two step Verification**
 - **Still on the Security tab, search for App Passwords**
 - **Click Generate. A 16-character password will be generated. Copy it**
