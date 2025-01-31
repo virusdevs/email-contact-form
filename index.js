@@ -4,10 +4,11 @@ const multer = require('multer');
 const path = require('path');
 require('dotenv').config();
 const app = express();
-const upload = multer({ dest: 'uploads/' });
+const upload = multer({ storage: multer.memoryStorage() });
+
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.post('/send-email.php', upload.single('attachment'), async (req, res) => {
+app.post('/send', upload.single('attachment'), async (req, res) => {
   const { name, phone, email, message } = req.body;
   const attachment = req.file;
   const transporter = nodemailer.createTransport({
@@ -21,9 +22,16 @@ app.post('/send-email.php', upload.single('attachment'), async (req, res) => {
   const mailOptions = {
     from: email,
     to: process.env.GMAIL_USER,
-    subject: `New Message from ${name}`,
+    subject: `New Message From ${name}`,
     text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`,
-    attachments: attachment ? [{ filename: attachment.originalname, path: attachment.path }] : [],
+    attachments: attachment
+      ? [
+          {
+            filename: attachment.originalname,
+            content: attachment.buffer, 
+          },
+        ]
+      : [],
   };
 
   try {
