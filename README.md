@@ -12,7 +12,7 @@
 
 - **Head over to your Gmail App**
 - **Click on manage your google account**
-- **Click On the Security Tab and enable Two step Verification**
+- **Click On the Security Tab and enable Two step Verification(A Must)**
 - **Still on the Security tab, search for App Passwords**
 - **Click Generate. A 16-character password will be generated. Copy it**
 - **If you’re using a Google Workspace account, your admin may need to enable App Passwords for your organization.**
