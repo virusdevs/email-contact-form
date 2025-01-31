@@ -6,12 +6,12 @@ const fs = require('fs');
 require('dotenv').config();
 const app = express();
 const uploadsDir = path.join(__dirname, 'uploads');
-const upload = multer({ dest: 'uploads/' });
 app.use(express.static(path.join(__dirname, 'public')));
 
 if (!fs.existsSync(uploadsDir)) {
     fs.mkdirSync(uploadsDir, { recursive: true });
         }
+const upload = multer({ dest: 'uploads/' });
 
 app.post('/send-email.php', upload.single('attachment'), async (req, res) => {
   const { name, phone, email, message } = req.body;
