@@ -30,6 +30,8 @@
 <summary>𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘</summary>
 
 - Insert your email(gmail) address and app password in the [`.env file`](https://github.com/mouricedevs/email-contact-form/blob/main/.env) on your forked repo or manually in heroku vars or any other platform before deploying.
+- NOTE THAT VERCEL LOAD TIME IS LIMITED SO YOU ARE NOT ABLE TO MAKE LONGER ATTACHMENTS SUCH AS AUDIOS/VIDEOS
+- You can edit the index.html in the public folder and add other file attachments that i might have forgotten.
 
 - [`VERCEL(free)`](https://vercel.com/login)
 - [`RENDER(free)`](https://dashboard.render.com)
