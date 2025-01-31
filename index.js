@@ -15,7 +15,7 @@ app.post('/send-email.php', upload.single('attachment'), async (req, res) => {
     service: 'gmail',
     auth: {
       user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS,
+      pass: process.env.APP_PASS,
     },
   });
 
