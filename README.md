@@ -15,9 +15,9 @@
 - **Click On the Security Tab and enable Two step Verification(A Must)**
 - **Still on the Security tab, search for App Passwords**
 - **Click Generate. A 16-character password will be generated. Copy it**
+- **Add it in the .env file in the APP_PASS line**
 - **If you’re using a Google Workspace account, your admin may need to enable App Passwords for your organization.**
 - **If you disable 2-Step Verification, all App Passwords will be revoked.**
-- **Add it in the .env file in the APP_PASS line**
 - **Deploy Your App**
   
 </details>
