@@ -36,7 +36,7 @@ app.post('/send-email.php', upload.single('attachment'), async (req, res) => {
 
   try {
     await transporter.sendMail(mailOptions);
-    res.json({ message: 'Message sent successfully!' });
+    res.json({ message: 'Message sent to Virusi!' });
   } catch (error) {
     console.error('Error sending email:', error);
     res.status(500).json({ message: 'Failed to send message.' });
