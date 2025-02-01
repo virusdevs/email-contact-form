@@ -4,7 +4,7 @@
   "description": "A Simple Email Contact Form",
   "main": "./index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name gifted",
+    "start": "pm2 start index.js --deep-monitoring --attach --name Virusi",
     "stop": "pm2 stop gifted",
     "restart": "pm2 restart gifted"
   },
