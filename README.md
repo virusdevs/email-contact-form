@@ -1,6 +1,6 @@
 
 ### Simple Contact Form on Production - Submit to Email
-- By [Gifted Tech](https://github.com/mouricedevs)
+- By [VIRUSI MBAYA](https://github.com/mouricedevs)
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 
